@@ -148,7 +148,7 @@ export const Sidebar = () => {
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: '15px 0 5px 20px' }}
+              sx={{ m: '10px 0 5px 15px' }}
             >
               Data
             </Typography>
@@ -180,7 +180,7 @@ export const Sidebar = () => {
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: '15px 0 5px 20px' }}
+              sx={{ m: '10px 0 5px 15px' }}
             >
               Pages
             </Typography>
@@ -212,7 +212,7 @@ export const Sidebar = () => {
             <Typography
               variant="h6"
               color={colors.grey[300]}
-              sx={{ m: '15px 0 5px 20px' }}
+              sx={{ m: '10px 0 5px 15px' }}
             >
               Charts
             </Typography>
