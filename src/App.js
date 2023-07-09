@@ -5,6 +5,7 @@ import { Contacts } from './scenes/Contacts';
 import { Dashboard } from './scenes/Dashboard';
 import { FAQ } from './scenes/FAQ';
 import { Form } from './scenes/Form';
+import { Geo } from './scenes/Geo';
 import { Invoices } from './scenes/Invoices';
 import { Line } from './scenes/Line';
 import { Pie } from './scenes/Pie';
@@ -33,7 +34,7 @@ function App() {
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
               <Route path="/faq" element={<FAQ />} />
-              {/* <Route path="/geography" element={Dashboard} /> */}
+              <Route path="/geography" element={<Geo />} />
             </Routes>
           </main>
         </div>
