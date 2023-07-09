@@ -1,6 +1,5 @@
 import {
   BarChartOutlined,
-  CalendarTodayOutlined,
   ContactsOutlined,
   HelpOutlined,
   HomeOutlined,
@@ -35,7 +34,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       '/line': 'Line Chart',
       '/faq': 'FAQ',
       '/geography': 'Geography Chart',
-      '/calendar': 'Calendar',
     };
 
     setSelected(locationIsActiveBindings[pathname]);
@@ -207,14 +205,6 @@ export const Sidebar = () => {
               title="Profile Form"
               to="/form"
               icon={<PersonOutlined />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-
-            <Item
-              title="Calendar"
-              to="/calendar"
-              icon={<CalendarTodayOutlined />}
               selected={selected}
               setSelected={setSelected}
             />
