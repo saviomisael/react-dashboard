@@ -63,8 +63,10 @@ export const Sidebar = () => {
   return (
     <Box
       sx={{
+        minHeight: '100vh',
         '& .ps-sidebar-root': {
           border: 'none !important',
+          height: '100%',
         },
         '& .ps-sidebar-container': {
           background: `${colors.primary[400]} !important`,
@@ -75,7 +77,6 @@ export const Sidebar = () => {
         '& .pro-inner-item': {
           padding: '5px 35px 5px 20px !important',
         },
-        minHeight: '100vh',
       }}
     >
       <ProSidebar
