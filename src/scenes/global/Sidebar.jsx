@@ -13,21 +13,39 @@ import {
 } from '@mui/icons-material';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import { Box, IconButton, Typography, useTheme } from '@mui/material';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, MenuItem, Sidebar as ProSidebar } from 'react-pro-sidebar';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { tokens } from '../../theme';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    const locationIsActiveBindings = {
+      '/': 'Dashboard',
+      '/team': 'Manage Team',
+      '/contacts': 'Contacts Information',
+      '/invoices': 'Invoices Balance',
+      '/form': 'Profile Form',
+      '/bar': 'Bar Chart',
+      '/pie': 'Pie Chart',
+      '/line': 'Line Chart',
+      '/faq': 'FAQ',
+      '/geography': 'Geography Chart',
+      '/calendar': 'Calendar',
+    };
+
+    setSelected(locationIsActiveBindings[pathname]);
+  }, [pathname, setSelected]);
 
   return (
     <MenuItem
       active={selected === title}
       style={{ color: colors.grey[100] }}
       onClick={() => {
-        console.log(title, selected);
         setSelected(title);
       }}
       icon={icon}
