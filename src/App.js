@@ -30,7 +30,6 @@ function App() {
               {/* <Route path="/line" element={Dashboard} /> */}
               {/* <Route path="/faq" element={Dashboard} /> */}
               {/* <Route path="/geography" element={Dashboard} /> */}
-              {/* <Route path="/calendar" element={Dashboard} /> */}
             </Routes>
           </main>
         </div>
