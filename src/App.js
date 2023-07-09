@@ -1,5 +1,6 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { Route, Routes } from 'react-router-dom';
+import { Bar } from './scenes/Bar';
 import { Contacts } from './scenes/Contacts';
 import { Dashboard } from './scenes/Dashboard';
 import { FAQ } from './scenes/FAQ';
@@ -26,7 +27,7 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
-              {/* <Route path="/bar" element={Dashboard} /> */}
+              <Route path="/bar" element={<Bar />} />
               {/* <Route path="/pie" element={Dashboard} /> */}
               {/* <Route path="/line" element={Dashboard} /> */}
               <Route path="/faq" element={<FAQ />} />
