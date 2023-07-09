@@ -1,5 +1,5 @@
 # Dashboard
-This is a dashboard with React and Material UI created using [this tutorial](https://www.youtube.com/watch?v=wYpCWwD1oz0&ab_channel=EdRoh).
+This is a dashboard with React and Material UI and it was created using [this tutorial](https://www.youtube.com/watch?v=wYpCWwD1oz0&ab_channel=EdRoh).
 
 # Getting Started with Create React App
 
